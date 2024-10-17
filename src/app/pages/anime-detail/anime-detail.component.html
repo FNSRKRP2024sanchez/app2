@@ -1,0 +1,35 @@
+
+
+    <article class="anime-container">
+
+    <header>
+        <h1 class="text-light anime-title">
+            {{ anime.title }}
+        </h1>
+    </header>
+
+
+    <figure class="anime-image">
+        <img src="{{ anime.images.jpg.image_url }}" alt="Imagen promocional del anime {{ anime.title }}" class="img-fluid rounded">
+    </figure>
+
+
+    <section class="anime-synopsis">
+        <p class="text-light">
+            {{ anime.synopsis }}
+        </p>
+    </section>
+
+
+    <section class="anime-details">
+        <p class="text-light">
+            <strong>Clasificación:</strong> {{ anime.rating }}
+        </p>
+        <p class="text-light">
+            <strong>Genero al que pertenece:</strong> {{ anime.genre }}
+        </p>
+        <p class="text-light">
+            <strong>Lanzamiento:</strong> {{ anime.release_date }}
+        </p>
+    </section>
+

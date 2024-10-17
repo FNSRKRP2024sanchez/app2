@@ -1,0 +1,38 @@
+<div class=" container-fluid">
+    <div class="row">
+        <div class="col-6">
+            <div class="mb-3">
+
+                <input type="text" class="form-control" name="busqueda" (change)="buscarAnime()" [(ngModel)]="busqueda"
+                    placeholder="Buscar tu anime favorito" />
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- <i class="fa-regular fa-heart"></i> -->
+
+<div class="container-fluid">
+    <div class="loader"></div>
+
+
+
+    <div class="row">
+        @for (animesearch of AnimeSearchs; track $index) {
+        <div class="col-6n col-sm-4 col-md-3 col-lg-2 col-xl-2 mt-3">
+            <app-animecard [animeInfo]="animesearch"></app-animecard>
+        </div>
+        }
+
+        @if (sinDatos) {
+
+
+        <div class="offset-4 col-4">
+            <h4 class="text-light text-center"> No hay resultados</h4>
+        </div>
+        }
+    </div>
+</div>

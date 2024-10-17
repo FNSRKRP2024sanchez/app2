@@ -1,0 +1,29 @@
+.anime_card{
+    /* background-color: aliceblue !important */
+    background-color: transparent !important;
+    border-radius: 30px !important;
+    border: none !important;
+    cursor: pointer;
+
+}
+
+.anime_card:hover {
+    transform:scale(1.03) ;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2 );
+}
+
+.anime_card img{
+    border-radius: 30px !important;
+    /* border-bottom-right-radius: 30px !important; */
+    /* border-bottom-left-radius: 30px !important; */
+
+}
+
+i{
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 10px;
+    font-size: 25 !important;
+    color: tomato !important;
+}
+

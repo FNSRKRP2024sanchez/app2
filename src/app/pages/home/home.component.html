@@ -1,0 +1,23 @@
+
+<div class="container-fluid">
+<!-- <div class="loader"></div> -->
+
+
+
+    <div class="row">
+        @for (anime of topAnimes; track anime.id){
+        <div class="col-6n col-sm-4 col-md-3 col-lg-2 col-xl-2 mt-3">
+            <app-animecard [animeInfo]="anime"></app-animecard> 
+        </div>
+    } @empty {
+        <div class="offset-5 col-3 mt-5 " ></div>
+        <div class=" loader"> </div>
+    }
+</div>
+</div>
+
+
+
+
+
+
